@@ -1,0 +1,6 @@
+ScrollAnimate：
+引入animate.css
+引入ScrollAnimate.js
+在要执行动画的元素上:
+添加class："alla"
+添加data-aniname="动画名称"(可在animate.css或百度animate.css获取)

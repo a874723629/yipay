@@ -58,10 +58,10 @@
         }
 
         .min-select {
-            margin-top: 20px;
+            margin-top: 10px;
             cursor: pointer;
             border: 1px solid rgba(0,0,0,0);
-            padding: 25px 10px;
+            padding: 10px 10px;
             border-radius: 10px;
         }
 
@@ -80,23 +80,23 @@
         }
 
         .select-min-title {
-            font-size: 26px;
-            margin-top: 15px;
+            font-size: 22px;
+            margin-top: 10px;
         }
 
         .select-min-font {
-            font-size: 20px;
+            font-size: 18px;
             color: rgba(0,0,0,0.6)
         }
 
         .select-right {
             float: right;
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             background-image: url('images/noright.png');
-            background-size: 40px;
-            margin: 30px;
+            background-size: 30px;
+            margin: 25px;
         }
 
         .select-right-active {
@@ -104,8 +104,8 @@
         }
 
         .select-left-img {
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
         }
 
         .action {
@@ -120,7 +120,7 @@
             background-color: rgba(253,125,0,1);
             color: rgba(255,255,255,1);
             border-radius: 30px;
-            margin-top: 100px;
+            margin-top: 50px;
         }
     </style>
 
@@ -231,7 +231,7 @@
 
             </div>
         </div>
-        <div class="min-select alla"data-aniname="fadeIn">
+        <div class="min-select alla" data-aniname="fadeIn">
             <div class="select-left">
                 <img class="select-left-img" src="images/brand_03.png" />
             </div>
@@ -248,7 +248,7 @@
 
             </div>
         </div>
-        <div class="min-select alla"data-aniname="fadeIn">
+        <div class="min-select alla" data-aniname="fadeIn">
             <div class="select-left">
                 <img class="select-left-img" src="images/brand_05.png" />
             </div>
@@ -265,7 +265,7 @@
 
             </div>
         </div>
-        <div class="min-select alla"data-aniname="fadeIn">
+        <div class="min-select alla" data-aniname="fadeIn">
             <div class="select-left">
                 <img class="select-left-img" src="images/brand_12.png" />
             </div>
@@ -282,7 +282,7 @@
 
             </div>
         </div>
-        <div class="min-select alla"data-aniname="fadeIn">
+        <div class="min-select alla" data-aniname="fadeIn">
             <div class="select-left">
                 <img class="select-left-img" src="images/brand_14.png" />
             </div>
@@ -299,7 +299,7 @@
 
             </div>
         </div>
-        <div class="min-select alla"data-aniname="fadeIn">
+        <div class="min-select alla" data-aniname="fadeIn">
             <div class="select-left">
                 <img class="select-left-img" src="images/brand_07.png" />
             </div>
@@ -316,7 +316,7 @@
 
             </div>
         </div>
-        <div class="min-select alla"data-aniname="fadeIn">
+        <div class="min-select alla" data-aniname="fadeIn">
             <div class="select-left">
                 <img class="select-left-img" src="images/brand_16.png" />
             </div>
@@ -333,7 +333,7 @@
 
             </div>
         </div>
-        <div class="action alla"data-aniname="fadeIn">
+        <div class="action alla" data-aniname="fadeIn">
             确认测试
         </div>
     </div>
@@ -343,21 +343,23 @@
         <div class="bottom">
             <ul class="bottom-list">
                 <li class="bottom-list-title pointer">关于我们</li>
-                <li class="bottom-list-li pointer">产品服务</li>
-                <li class="bottom-list-li pointer">新手帮助</li>
-                <li class="bottom-list-li pointer">进度查询</li>
+                <li class="bottom-list-li pointer"><a href="CompanyProfile.html" target="_self">公司简介</a></li>
+                <li class="bottom-list-li pointer"><a href="contact.html" target="_self">联系我们</a></li>
             </ul>
             <ul class="bottom-list">
-                <li class="bottom-list-title pointer">公司简介</li>
-                <li class="bottom-list-li pointer">支付介绍</li>
-                <li class="bottom-list-li pointer">互联网金融</li>
-                <li class="bottom-list-li pointer">注册账户</li>
+                <li class="bottom-list-title pointer">产品服务</li>
+                <li class="bottom-list-li pointer"><a href="paynet.html" target="_self">支付介绍</a></li>
+                <li class="bottom-list-li pointer"><a href="paytest.html" target="_self">支付测试</a></li>
             </ul>
             <ul class="bottom-list">
-                <li class="bottom-list-title pointer">联系我们</li>
-                <li class="bottom-list-li pointer">支付测试</li>
-                <li class="bottom-list-li pointer">关于账户</li>
-                <li class="bottom-list-li pointer">开户查询</li>
+                <li class="bottom-list-title pointer">新手帮助</li>
+                <li class="bottom-list-li pointer"><a href="finance.html" target="_self">互联网金融</a></li>
+                <li class="bottom-list-li pointer"><a href="cloud.html" target="_self">关于账户</a></li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">进度查询</li>
+                <li class="bottom-list-li pointer help"><a>注册账户</a></li>
+                <li class="bottom-list-li pointer"><a href="account.html" target="_self">开户查询</a></li>
             </ul>
         </div>
         <div class="copyright-case">
@@ -386,7 +388,7 @@
             GCAutoRun(".GC-bg", 7000);
             $(".head-menu-li").mouseover(function () {
                 $(this).find(".drop-list").stop().slideDown(300);
-                
+
             }).mouseout(function () {
                 $(this).find(".drop-list").stop().slideUp(300);
             })

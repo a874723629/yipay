@@ -142,7 +142,7 @@ margin-left:55px;
     /*width:20%;*/
     padding: 40px 0px;
     display: inline-block;
-    margin-right: 25%;
+    margin-right: 15%;
 }
 
 .pointer {
@@ -153,16 +153,14 @@ margin-left:55px;
     margin-top: 15px;
     width: auto;
 }
-
-    .bottom-list > li:hover {
-        color: rgba(255,255,255,1);
+    .bottom-list > li > a {
+        color: rgba(255,255,255,0.8);
     }
-
-.bottom-list-title {
-    font-size: 18px;
-    width: 40px;
-    color: rgba(255,255,255,0.8);
-}
+    .bottom-list-title {
+        font-size: 18px;
+        width: 40px;
+        color: rgba(255,255,255,0.8);
+    }
 
 .bottom-list-li {
     font-size: 15px;

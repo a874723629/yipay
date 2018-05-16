@@ -178,9 +178,9 @@
         <img class="GC-bg" src="images/GC-bg3.jpg" />
     </div>
     <!-- 巨幕END -->
-        <div class="min-title">
-            互联网金融
-        </div>
+    <div class="min-title">
+        互联网金融
+    </div>
     <div class="min">
         <div>
             <img class="list-top-left left alla" data-aniname="fadeInLeft" src="images/Pro/Pro2_03.png" />
@@ -241,21 +241,23 @@
         <div class="bottom">
             <ul class="bottom-list">
                 <li class="bottom-list-title pointer">关于我们</li>
-                <li class="bottom-list-li pointer">产品服务</li>
-                <li class="bottom-list-li pointer">新手帮助</li>
-                <li class="bottom-list-li pointer">进度查询</li>
+                <li class="bottom-list-li pointer"><a href="CompanyProfile.html" target="_self">公司简介</a></li>
+                <li class="bottom-list-li pointer"><a href="contact.html" target="_self">联系我们</a></li>
             </ul>
             <ul class="bottom-list">
-                <li class="bottom-list-title pointer">公司简介</li>
-                <li class="bottom-list-li pointer">支付介绍</li>
-                <li class="bottom-list-li pointer">互联网金融</li>
-                <li class="bottom-list-li pointer">注册账户</li>
+                <li class="bottom-list-title pointer">产品服务</li>
+                <li class="bottom-list-li pointer"><a href="paynet.html" target="_self">支付介绍</a></li>
+                <li class="bottom-list-li pointer"><a href="paytest.html" target="_self">支付测试</a></li>
             </ul>
             <ul class="bottom-list">
-                <li class="bottom-list-title pointer">联系我们</li>
-                <li class="bottom-list-li pointer">支付测试</li>
-                <li class="bottom-list-li pointer">关于账户</li>
-                <li class="bottom-list-li pointer">开户查询</li>
+                <li class="bottom-list-title pointer">新手帮助</li>
+                <li class="bottom-list-li pointer"><a href="finance.html" target="_self">互联网金融</a></li>
+                <li class="bottom-list-li pointer"><a href="cloud.html" target="_self">关于账户</a></li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">进度查询</li>
+                <li class="bottom-list-li pointer help"><a>注册账户</a></li>
+                <li class="bottom-list-li pointer"><a href="account.html" target="_self">开户查询</a></li>
             </ul>
         </div>
         <div class="copyright-case">
@@ -284,7 +286,7 @@
             GCAutoRun(".GC-bg", 7000);
             $(".head-menu-li").mouseover(function () {
                 $(this).find(".drop-list").stop().slideDown(300);
-                
+
             }).mouseout(function () {
                 $(this).find(".drop-list").stop().slideUp(300);
             })

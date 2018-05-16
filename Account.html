@@ -18,18 +18,18 @@
         <![endif]-->
 
     <style type="text/css">
-        /*主体*/
-        .min {
+        .min-case {
+            width: 100%;
+            background-color: #fff;
         }
 
-        .min-case {
-            margin: 0px auto;
-            width: 100%;
-            margin-top: 50px;
+        .min {
+            padding: 100px 0px;
         }
 
         .min-title {
-            color: rgba(253,125,0,1);
+            text-align: center;
+            margin-bottom: 50px;
         }
 
         .min-title-ch {
@@ -42,42 +42,112 @@
             font-weight: 200;
         }
 
-        .min-list {
-            margin-top: 30px;
+        .min1-min > div:nth-child(2), .min1-min > div:nth-child(3) {
+            margin-left: 14%;
         }
 
-        .min-list-img {
-            width: 50%;
+        .world, .money, .cloud {
+            float: left;
+            width: 24%;
         }
 
-        .min-list-font {
-            width: 50%;
+        .min1-min-img {
+            width: 40%;
+            margin: 0px 30%;
         }
 
-        .min-list-title {
-            margin-top: 15%;
-            border-left: 2px solid rgba(253,120,0,1);
-            font-size: 18px;
-            padding-left: 5px;
-            font-weight: 900;
+        .min1-min-title, .min1-min-font {
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 2px;
         }
 
-        .min-list-son {
-            padding-left: 5px;
+        .min2-bg {
+            background-color: rgba(241,241,241,1);
+            width: 100%;
+        }
+
+        .min2-min {
+        }
+
+        .min2-min-left {
+            width: 49%;
+            position: relative;
+        }
+
+        .min2-min-img {
+            width: 100%;
+        }
+
+        .min2-min-imgfont {
+            width: 90%;
+            padding: 5%;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background-color: rgba(61,106,150,1);
+            color: rgba(255,255,255,1);
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        .min2-min-right {
+            width: 45%;
+            padding-left: 5%;
+        }
+
+        .min2-list:nth-child(1) {
+            padding-bottom: 7%;
+        }
+
+        .min2-list:nth-child(2) {
+            padding-top: 7%;
+            border-top: 1px solid rgba(0,0,0,0.2);
+        }
+
+        .min2-list-title {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        .min2-list-time {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .min2-list-font {
+            margin-top: 12px;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .min3 {
+            margin-bottom: 100px;
+        }
+
+        .min3-min-left {
+            width: 35%;
+            padding: 10% 5% 10% 0px;
+        }
+
+        .min3-min-right {
+            width: 60%;
+        }
+
+        .min3-min-img {
+            width: 90%;
+            box-shadow: rgba(0,0,0,0.6) 5px 5px 2px;
+        }
+
+        .min3-min-font {
             font-size: 16px;
-            margin-top: 15px;
+            letter-spacing: 2px;
         }
 
-        .min-list-font.right > div {
-            margin-left: 30px;
-        }
-
-        .min-list-font.left > div {
-            margin-right: 30px;
-        }
-
-        .more {
-            margin: 100px auto;
+        .min3-min-more {
+            margin: 0px auto;
+            margin-top: 10%;
             width: 100px;
             text-align: center;
             border-radius: 30px;
@@ -92,12 +162,12 @@
             transition: all 0.5s;
         }
 
-            .more:hover {
+            .min3-min-more:hover {
                 color: rgba(0,0,0,0.5);
                 border: 1px solid rgba(0,0,0,0.5);
             }
-        /*主体END*/
     </style>
+
 </head>
 <body>
     <!-- 头部 -->
@@ -132,7 +202,7 @@
                     </li>
                 </ul>
                 <ul class="head-menu">
-                    <li class="left head-menu-li">
+                    <li class="left head-menu-li head-active">
                         <img class="img-home" src="images/home_03.png" /> <a target="_self" href="home.html">首页 </a>
                     </li>
                     <li class="left head-menu-li">
@@ -166,7 +236,7 @@
                     <li class="left head-menu-li">
                         <a target="_self" href="Security.html">安全中心</a>
                     </li>
-                    <li class="left head-menu-li  head-active">
+                    <li class="left head-menu-li">
                         关于我们
                         <ul class="drop-list">
                             <li class="drop-list-item">
@@ -192,39 +262,6 @@
     </div>
     <!-- 巨幕END -->
     <!-- 主体 -->
-    <div class="min">
-        <div class="min-case">
-            <div class="min-title alla" data-aniname="fadeIn">
-                <div class="min-title-ch">公司简介</div>
-                <div class="min-title-en">&nbsp;&nbsp;COMPANY PROFILE</div>
-            </div>
-            <div class="min-list">
-                <img class="min-list-img left alla" src="images/Pro/Pro1_03.png" data-aniname="fadeInLeft" />
-                <div class="min-list-font right alla" data-aniname="fadeInRight">
-                    <div class="min-list-title">亿支付信息科技有限公司</div>
-                    <div class="min-list-son">
-                        亿支付信息科技有限公司成立于2011年1月，是一的家以第三方支付为基础的科技金融综合服务平台，亿支付旗下现拥有，针对B2B/B2C的网络支付产品、移动支付产品、金融的的的服务产品等针对企业资金管理服务推出的云账户服务，针对互联网金融行业联合多家银行共同推出银行存管解决方案；针对跨境商贸领域的跨境支付解决方案。
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="min-list">
-                <div class="min-list-font left alla" data-aniname="fadeInLeft">
-                    <div class="min-list-title">亿支付信息科技有限公司</div>
-                    <div class="min-list-son">
-                        亿支付信息科技有限公司成立于2011年1月，是一的家以第三方支付为基础的科技金融综合服务平台，亿支付旗下现拥有，针对B2B/B2C的网络支付产品、移动支付产品、金融的的的服务产品等针对企业资金管理服务推出的云账户服务，针对互联网金融行业联合多家银行共同推出银行存管解决方案；针对跨境商贸领域的跨境支付解决方案。
-                    </div>
-                </div>
-                <img class="min-list-img right alla" data-aniname="fadeInRight" src="images/Pro/Pro2_03.png" />
-                <div class="clear">
-
-                </div>
-            </div>
-        </div>
-        <div class="more alla" data-aniname="fadeIn">
-            MORE
-        </div>
-    </div>
     <!-- 主体END -->
     <!-- 底部 -->
     <div class="bottom-case">
