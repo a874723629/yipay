@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>亿支付</title>
+    <meta content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=yes" name="viewport">
+    <link rel="shortcut icon" href="images/logo_favicon_yi.ico" type="image/x-icon" />
+    <script src="public/jquery-3.1.1.min.js"></script>
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <script src="js/ScrollAnimate.js"></script>
+    <!--[if IE 9]>
+           <style type="text/css">
+        .alla {
+            opacity:1;
+        }
+    </style>
+        <![endif]-->
+    <style type="text/css">
+        /*主体*/
+        .min {
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+
+        .min-title-case {
+            width: 100%;
+            padding: 5px 0px;
+            margin-top:30px;
+        }
+
+        .min-title {
+            padding: 5px 0px;
+            margin: 0px auto;
+            min-width: 1024px;
+            width: 60%;
+        }
+
+        .min-title-left {
+            font-size: 20px;
+            font-weight: 900;
+            color: rgba(253,123,0,1);
+            line-height: 20px;
+        }
+
+        .min-title-list {
+            line-height: 20px;
+            font-size: 12px;
+            color: rgba(0,0,0,1);
+        }
+
+        .min-title-select {
+            margin: 0px 6px;
+            border-radius: 20px;
+            border: 0px solid #cacaca;
+            padding: 0px 8px;
+            cursor: pointer;
+            -o-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        .min-title-active {
+            color: rgba(255,255,255,1);
+            background-color: rgba(252,129,15,1);
+        }
+
+        .min-title-select:hover {
+            color: rgba(255,255,255,1);
+            background-color: rgba(252,129,15,1);
+        }
+        /*.min-case {
+            margin: 0px auto;
+            width: 100%;
+            margin-top: 50px;
+        }*/
+        .min-list {
+            margin-top: 80px;
+        }
+
+        .min-list-img {
+            width: 50%;
+        }
+
+        .min-list-font {
+            width: 40%;
+        }
+
+        .min-list-title {
+            border-left: 2px solid rgba(253,120,0,1);
+            font-size: 20px;
+            padding-left: 10px;
+            font-weight: 900;
+            margin-bottom: 7%;
+            line-height: 18px;
+        }
+
+        .min-list-stitle {
+            font-size: 17px;
+            padding-left: 10px;
+            margin-top: 7%;
+        }
+
+        .min-list-son {
+            padding-left: 10px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .min-list-font.right > div {
+            margin-left: 30px;
+        }
+
+        .min-list-font.left > div {
+            margin-right: 30px;
+        }
+        /*主体END*/
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="head-case">
+        <div class="head">
+            <div class="left">
+                <img class="head-logo" src="images/logo_03.png" />
+            </div>
+            <div class="right">
+                <ul class="head-button">
+                    <li class="head-button-item">
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_11.png" />获取帮助</a>
+                    </li>
+                    <li class="head-button-item">
+
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_08.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_06.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">用户登录</a>
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">注册</a>
+                    </li>
+                    <li class="clear">
+
+                    </li>
+                </ul>
+                <ul class="head-menu">
+                    <li class="left head-menu-li">
+                        <img class="img-home" src="images/home_03.png" /> <a target="_self" href="home.html">首页 </a>
+                    </li>
+                    <li class="left head-menu-li  head-active">
+                        产品服务
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="paynet.html">网络支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="payment.html">移动支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="paytest.html">支付测试</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        行业解决方案
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="finance.html">互联网金融</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="cloud.html">云账户</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="pipay.html">亿支付</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        <a target="_self" href="Security.html">安全中心</a>
+                    </li>
+                    <li class="left head-menu-li">
+                        关于我们
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="CompanyProfile.html">公司简介</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="contact.html">联系我们</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 头部END -->
+    <!-- 巨幕 -->
+    <div class="GC">
+        <img class="GC-bg" src="images/GC-bg1.jpg" />
+        <img class="GC-bg" src="images/GC-bg2.jpg" />
+        <img class="GC-bg" src="images/GC-bg3.jpg" />
+    </div>
+    <!-- 巨幕END -->
+    <!-- 主体 -->
+    <div class="min-title-case">
+        <div class="min-title">
+            <div class="min-title-left left">
+                网络支付
+            </div>
+            <div class="min-title-list right">
+                <ul>
+                    <li class="min-title-select min-title-active left">
+                        企业网银
+                    </li>
+                    <li class="min-title-select left">
+                        支付个人
+                    </li>
+                    <li class="min-title-select left">
+                        批量付款
+                    </li>
+                    <li class="min-title-select left">
+                        快捷支付
+                    </li>
+                    <li class="min-title-select left">
+                        扫码支付
+                    </li>
+                    <li class="clear">
+
+                    </li>
+                </ul>
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="min">
+        <div class="min-case">
+            <div class="min-list">
+                <img class="min-list-img left alla" data-aniname="fadeInLeft" src="images/Pro/bg17_03.png" />
+                <div class="min-list-font right alla" data-aniname="fadeInRight">
+                    <div class="min-list-title">企业网银支付</div>
+                    <div class="min-list-son">
+                        企业网银支付是亿支付为商户提供接受企业消费者使用网银进行支付的服务。目前，派莫支付支持的企业网银覆盖中国工商银行、中国农业银行、中国银行、中国建设银行、交通银行等国内主流银行。
+                    </div>
+                    <div class="min-list-stitle">
+                        应用领域：
+                    </div>
+                    <div class="min-list-son">
+                        B2B电商平台、企业充值等
+                    </div>
+                    <div class="min-list-stitle">
+                        特点：
+                    </div>
+                    <div class="min-list-son">
+                        无限额。<br />
+                        即时到账，实时收款。<br />
+                        自动补单和人工补单重保障机制，支付成功。<br />
+                        率高支持直连接口模式和收银台模式。
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="min-list">
+                <div class="min-list-font left alla" data-aniname="fadeInLeft">
+                    <div class="min-list-title">个人网银支付</div>
+                    <div class="min-list-son">
+                        个人网银支付是亿支付为商户提供接受个人消费者使用网银进行支付的服务。目前，亿支付个人网银覆盖中国工商银行、中国建设银行、中国农业银行、中国银行、交通银行五大国有银行及主流商业银行
+                    </div>
+                    <div class="min-list-stitle">
+                        应用领域：
+                    </div>
+                    <div class="min-list-son">
+                        电商平台 金融理财平台 社交平台等。
+                    </div>
+                    <div class="min-list-stitle">
+                        特点：
+                    </div>
+                    <div class="min-list-son">
+                        即时到账，实时收款。<br />
+                        三个月内，随时退款。<br />
+                        借贷分离，防止套现。<br />
+                        支持直连接口模式和收银台模式。
+                    </div>
+                </div>
+                <img class="min-list-img right alla" data-aniname="fadeInRight" src="images/Pro/bg16_03.png" />
+                <div class="clear">
+
+                </div>
+            </div>
+            <div class="min-list">
+                <img class="min-list-img left alla" data-aniname="fadeInLeft" src="images/Pro/bg15_03.png" />
+                <div class="min-list-font right alla" data-aniname="fadeInRight">
+                    <div class="min-list-title">批量付款</div>
+                    <div class="min-list-son">
+                        批量付款是亿支付为商户提供付款至指定多个银行账户或派莫支付账户的资金结算服务，付款对象涵盖企业及个人。
+                    </div>
+                    <div class="min-list-stitle">
+                        应用领域：
+                    </div>
+                    <div class="min-list-son">
+                        工资奖金代发、保险公司佣金发放、红包派发
+                        货款支付、销售返点等付款场景。
+                    </div>
+                    <div class="min-list-stitle">
+                        特点：
+                    </div>
+                    <div class="min-list-son">
+                        节假日可结算，服务不间断。<br />
+                        支持向所有境内银行付款。<br />
+                        可灵活选择结算周期，效率高，到账快。<br />
+                        商户可选择对接API接口或使用商户后台进行<br />
+                        付款。
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="min-list">
+                <div class="min-list-font left alla" data-aniname="fadeInLeft">
+                    <div class="min-list-title">个人网银支付</div>
+                    <div class="min-list-son">
+                        快捷支付API是亿支付为企业客户提供的接口类快捷支付产品，通过整合各家银行快捷支付接口，实现客户可根据自身产品特点和产品风格，定义支付流程和界面，从而保持产品风格统一，加深产品契合度，提升支付成功率。
+                    </div>
+                    <div class="min-list-stitle">
+                        应用领域：
+                    </div>
+                    <div class="min-list-son">
+                        电商、航旅、游戏、公共缴费、网上消费场景。
+                    </div>
+                    <div class="min-list-stitle">
+                        特点：
+                    </div>
+                    <div class="min-list-son">
+                        自定义支付界面，提升产品契合度。<br />
+                        覆盖国内主流银行，实现借贷分离。<br />
+                        即时到账，实时收款。<br />
+                        支付成功率高。
+                    </div>
+                </div>
+                <img class="min-list-img right alla" data-aniname="fadeInRight" src="images/Pro/bg14_03.png" />
+                <div class="clear">
+
+                </div>
+            </div>
+            <div class="min-list">
+                <img class="min-list-img left alla" data-aniname="fadeInLeft" src="images/Pro/bg13_03.png" />
+                <div class="min-list-font right alla" data-aniname="fadeInRight">
+                    <div class="min-list-title">扫码支付</div>
+                    <div class="min-list-son">
+                        扫码支付是通过亿支付网页收银台为商家提供接受个人消费者使用其手机App钱包类产品扫描二维码进行支付的服务，用户使用App钱包端绑定的银行卡或余额完成支付。
+                    </div>
+                    <div class="min-list-stitle">
+                        应用领域：
+                    </div>
+                    <div class="min-list-son">
+                        电商、航旅、游戏、公共缴费、教育等网上消
+                        费场景。
+                    </div>
+                    <div class="min-list-stitle">
+                        特点：
+                    </div>
+                    <div class="min-list-son">
+                        支持主流钱包App扫码。<br />
+                        实现借贷分离。<br />
+                        即时到账，实时收款。<br />
+                        支付成功率高，用户体验好。<br />
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体END -->
+    <!-- 底部 -->
+    <div class="bottom-case">
+        <div class="bottom">
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">关于我们</li>
+                <li class="bottom-list-li pointer">产品服务</li>
+                <li class="bottom-list-li pointer">新手帮助</li>
+                <li class="bottom-list-li pointer">进度查询</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">公司简介</li>
+                <li class="bottom-list-li pointer">支付介绍</li>
+                <li class="bottom-list-li pointer">互联网金融</li>
+                <li class="bottom-list-li pointer">注册账户</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">联系我们</li>
+                <li class="bottom-list-li pointer">支付测试</li>
+                <li class="bottom-list-li pointer">关于账户</li>
+                <li class="bottom-list-li pointer">开户查询</li>
+            </ul>
+        </div>
+        <div class="copyright-case">
+            <div class="copyright">
+                <div class="left">
+                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备17000528号-1
+                </div>
+                <div class="right">
+                    <img class="follow" src="images/qq_03.png" />
+                    <img class="follow" src="images/wb_03.png" />
+                    <img class="follow" src="images/wx_03.png" />
+                </div>
+                <div class="right">
+                    关注我们：
+                </div>
+                <div class="clear">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部END -->
+    <script src="js/GCAutoRun.js"></script>
+    <script>
+        $(function () {
+            $(function () {
+                GCAutoRun(".GC-bg", 7000);
+                $(".head-menu-li").mouseover(function () {
+                    $(this).find(".drop-list").stop().slideDown(300);
+                    
+                }).mouseout(function () {
+                    $(this).find(".drop-list").stop().slideUp(300);
+                })
+                $(".drop-list").mouseover(function () {
+                    $(this).stop().slideDown(300);
+                }).mouseout(function () {
+                    $(this).stop().slideUp(300);
+                })
+            })
+            //点击选项卡，加载样式，跳转
+            $(".min-title-select").click(function () {
+                $(this).addClass("min-title-active").siblings().removeClass("min-title-active")
+                var scro = $(this).data("sc");
+                $("html:not(:animated),body:not(:animated)").animate({ "scrollTop": scro - 100 }, 1000)
+            })
+            var num = 0;
+            //将跳转信息赋值
+            $(".min-list").each(function () {
+                var t = $(this).offset().top;
+                $(".min-title-select").eq(num).data("sc", t);
+                num++;
+            })
+            //检测鼠标滚轮
+            var scrolltop;
+            $(window).scroll(function () {
+                scrolltop = $(this).scrollTop();
+                $(".min-title-select").each(function () {
+                    //console.log(scrolltop + "-" + $(this).data("sc"));
+                    if (scrolltop >= $(this).data("sc") - 100) {
+                        $(this).addClass("min-title-active").siblings().removeClass("min-title-active")
+                    }
+                })
+            })
+
+        })
+    </script>
+</body>
+</html>

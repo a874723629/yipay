@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>亿支付</title>
+    <meta content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=yes" name="viewport">
+    <link rel="shortcut icon" href="images/logo_favicon_yi.ico" type="image/x-icon" />
+    <script src="public/jquery-3.1.1.min.js"></script>
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <script src="js/ScrollAnimate.js"></script>
+    <script src="public/bootstrap.js"></script>
+    <link href="public/bootstrap.css" rel="stylesheet" />
+    <!--[if IE 9]>
+           <style type="text/css">
+        .alla {
+            opacity:1;
+        }
+    </style>
+        <![endif]-->
+
+    <style type="text/css">
+        .min {
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .min-title {
+            font-size: 34px;
+            font-weight: 900;
+            color: rgba(253,125,0,1);
+        }
+
+        .model {
+            margin-top: 50px;
+        }
+
+        .model-item {
+            float: left;
+            color: rgba(255,255,255,1);
+            width: 120px;
+            height: 45px;
+            text-align: center;
+            font-size: 28px;
+            line-height: 45px;
+            border-radius: 30px;
+            background-color: rgba(0,0,0,0.2);
+            margin-left: 40px;
+            cursor: pointer;
+        }
+
+        .model-item-active {
+            background-color: rgba(253,125,0,1);
+        }
+
+        .model-item:nth-child(1) {
+            margin-left: 0px;
+        }
+
+        .min-select {
+            margin-top: 20px;
+            cursor: pointer;
+            border: 1px solid rgba(0,0,0,0);
+            padding: 25px 10px;
+            border-radius: 10px;
+        }
+
+            .min-select:hover {
+                box-shadow: rgba(0,0,0,0.4) 0px 0px 6px;
+                border: 1px solid rgba(0,0,0,0.3);
+            }
+
+        .select-left {
+            float: left;
+        }
+
+        .select-min {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .select-min-title {
+            font-size: 26px;
+            margin-top: 15px;
+        }
+
+        .select-min-font {
+            font-size: 20px;
+            color: rgba(0,0,0,0.6)
+        }
+
+        .select-right {
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-image: url('images/noright.png');
+            background-size: 40px;
+            margin: 30px;
+        }
+
+        .select-right-active {
+            background-image: url('images/right.png');
+        }
+
+        .select-left-img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .action {
+            width: 250px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 32px;
+            font-weight: 900;
+            cursor: pointer;
+            text-align: center;
+            margin: 0px auto;
+            background-color: rgba(253,125,0,1);
+            color: rgba(255,255,255,1);
+            border-radius: 30px;
+            margin-top: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="head-case">
+        <div class="head">
+            <div class="left">
+                <img class="head-logo" src="images/logo_03.png" />
+            </div>
+            <div class="right">
+                <ul class="head-button">
+                    <li class="head-button-item">
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_11.png" />获取帮助</a>
+                    </li>
+                    <li class="head-button-item">
+
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_08.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_06.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">用户登录</a>
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">注册</a>
+                    </li>
+                    <li class="clear">
+
+                    </li>
+                </ul>
+                <ul class="head-menu">
+                    <li class="left head-menu-li">
+                        <img class="img-home" src="images/home_03.png" /> <a target="_self" href="home.html">首页 </a>
+                    </li>
+                    <li class="left head-menu-li head-active">
+                        产品服务
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="paynet.html">网络支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="payment.html">移动支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="paytest.html">支付测试</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        行业解决方案
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="finance.html">互联网金融</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="cloud.html">云账户</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="pipay.html">亿支付</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        <a target="_self" href="Security.html">安全中心</a>
+                    </li>
+                    <li class="left head-menu-li">
+                        关于我们
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="CompanyProfile.html">公司简介</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="contact.html">联系我们</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 头部END -->
+    <!-- 巨幕 -->
+    <div class="GC">
+        <img class="GC-bg" src="images/GC-bg1.jpg" />
+        <img class="GC-bg" src="images/GC-bg2.jpg" />
+        <img class="GC-bg" src="images/GC-bg3.jpg" />
+    </div>
+    <!-- 巨幕END -->
+    <!-- 主体 -->
+    <div class="min">
+        <div class="min-title alla" data-aniname="fadeIn">
+            支付测试
+        </div>
+        <div class="model alla" data-aniname="fadeIn">
+            <div class="model-item model-item-active">0.12</div>
+            <div class="model-item">1.02</div>
+            <div class="model-item">2.05</div>
+            <div class="model-item">10.12</div>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div class="min-select alla"data-aniname="fadeIn">
+            <div class="select-left">
+                <img class="select-left-img" src="images/brand_03.png" />
+            </div>
+            <div class="select-min">
+                <div class="select-min-title">支付宝支付</div>
+                <div class="select-min-font">
+                    支持信用卡、储蓄卡快捷支付及支付宝扫码
+                </div>
+            </div>
+            <div class="select-right select-right-active" data-select="zfb">
+
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div class="min-select alla"data-aniname="fadeIn">
+            <div class="select-left">
+                <img class="select-left-img" src="images/brand_05.png" />
+            </div>
+            <div class="select-min">
+                <div class="select-min-title">QQ钱包支付</div>
+                <div class="select-min-font">
+                    支持信用卡、储蓄卡快捷支付及QQ
+                </div>
+            </div>
+            <div class="select-right" data-select="qq">
+
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div class="min-select alla"data-aniname="fadeIn">
+            <div class="select-left">
+                <img class="select-left-img" src="images/brand_12.png" />
+            </div>
+            <div class="select-min">
+                <div class="select-min-title">网银支付</div>
+                <div class="select-min-font">
+                    支持信用卡、储蓄卡快捷等快捷H5
+                </div>
+            </div>
+            <div class="select-right" data-select="wy">
+
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div class="min-select alla"data-aniname="fadeIn">
+            <div class="select-left">
+                <img class="select-left-img" src="images/brand_14.png" />
+            </div>
+            <div class="select-min">
+                <div class="select-min-title">微信支付</div>
+                <div class="select-min-font">
+                    支持信用卡、储蓄卡快捷支付及微信扫码
+                </div>
+            </div>
+            <div class="select-right" data-select="wx">
+
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div class="min-select alla"data-aniname="fadeIn">
+            <div class="select-left">
+                <img class="select-left-img" src="images/brand_07.png" />
+            </div>
+            <div class="select-min">
+                <div class="select-min-title">京东钱包支付</div>
+                <div class="select-min-font">
+                    支持信用卡、储蓄卡快捷支付及京东钱包
+                </div>
+            </div>
+            <div class="select-right" data-select="jd">
+
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div class="min-select alla"data-aniname="fadeIn">
+            <div class="select-left">
+                <img class="select-left-img" src="images/brand_16.png" />
+            </div>
+            <div class="select-min">
+                <div class="select-min-title">快捷支付</div>
+                <div class="select-min-font">
+                    支持信用卡、储蓄卡快捷等
+                </div>
+            </div>
+            <div class="select-right" data-select="kh">
+
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+        <div class="action alla"data-aniname="fadeIn">
+            确认测试
+        </div>
+    </div>
+    <!-- 主体END -->
+    <!-- 底部 -->
+    <div class="bottom-case">
+        <div class="bottom">
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">关于我们</li>
+                <li class="bottom-list-li pointer">产品服务</li>
+                <li class="bottom-list-li pointer">新手帮助</li>
+                <li class="bottom-list-li pointer">进度查询</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">公司简介</li>
+                <li class="bottom-list-li pointer">支付介绍</li>
+                <li class="bottom-list-li pointer">互联网金融</li>
+                <li class="bottom-list-li pointer">注册账户</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">联系我们</li>
+                <li class="bottom-list-li pointer">支付测试</li>
+                <li class="bottom-list-li pointer">关于账户</li>
+                <li class="bottom-list-li pointer">开户查询</li>
+            </ul>
+        </div>
+        <div class="copyright-case">
+            <div class="copyright">
+                <div class="left">
+                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备17000528号-1
+                </div>
+                <div class="right">
+                    <img class="follow" src="images/qq_03.png" />
+                    <img class="follow" src="images/wb_03.png" />
+                    <img class="follow" src="images/wx_03.png" />
+                </div>
+                <div class="right">
+                    关注我们：
+                </div>
+                <div class="clear">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部END -->
+    <script src="js/GCAutoRun.js"></script>
+    <script>
+        $(function () {
+            GCAutoRun(".GC-bg", 7000);
+            $(".head-menu-li").mouseover(function () {
+                $(this).find(".drop-list").stop().slideDown(300);
+                
+            }).mouseout(function () {
+                $(this).find(".drop-list").stop().slideUp(300);
+            })
+            //$(".drop-list-item").mouseout(function () {
+            //    $(this).parent().stop().slideUp(500);
+            //    })
+            $(".drop-list").mouseover(function () {
+                $(this).stop().slideDown(300);
+            }).mouseout(function () {
+                $(this).stop().slideUp(300);
+            })
+            //选择的模式
+            var modle = 0.12;
+            //选择的条目
+            var select = "zf";
+            //title选择样式
+            $(".model-item").click(function () {
+                $(".model-item").removeClass("model-item-active");
+                $(this).addClass("model-item-active");
+                modle = $(this).html()
+                console.log(modle);
+            })
+            //min选择样式
+            $(".min-select").click(function () {
+                $(".select-right").removeClass("select-right-active");
+                $(this).find(".select-right").addClass("select-right-active");
+                select = $(this).find(".select-right").data("select");
+                console.log(select);
+            })
+        })
+    </script>
+</body>
+</html>

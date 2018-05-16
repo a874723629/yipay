@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>亿支付</title>
+    <meta content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=yes" name="viewport">
+    <link rel="shortcut icon" href="images/logo_favicon_yi.ico" type="image/x-icon" />
+    <script src="public/jquery-3.1.1.min.js"></script>
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <script src="js/ScrollAnimate.js"></script>
+    <!--[if IE 9]>
+           <style type="text/css">
+        .alla {
+            opacity:1;
+        }
+    </style>
+        <![endif]-->
+
+    <style type="text/css">
+        .min {
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+
+        .min-title {
+            color: rgba(253,125,0,1);
+        }
+
+        .min-title-ch {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .min-title-en {
+            font-size: 12px;
+            font-weight: 200;
+        }
+
+        .map {
+            margin-top: 50px;
+        }
+
+        .map-img {
+            width: 100%;
+        }
+
+        .contact {
+            margin-top: 80px;
+        }
+
+        .contact-left-input, .position {
+            margin-top: 20px;
+        }
+
+        .contact-title {
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        .input {
+            display: block;
+            border: 0px solid rgba(0,0,0,0.2);
+            color: rgba(0,0,0,0.2);
+            border-right: 1px solid rgba(0,0,0,0.2);
+            height: 40px;
+            font-size: 15px;
+            width: 100px;
+        }
+
+            .input:nth-child(1) {
+                border-bottom: 1px solid rgba(0,0,0,0.2);
+            }
+
+            .input:nth-child(2) {
+                border-bottom: 1px solid rgba(0,0,0,0.2);
+            }
+
+        .text {
+            border: 0px solid rgba(0,0,0,0.2);
+            color: rgba(0,0,0,0.2);
+            resize: none;
+            height: 100px;
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .input-active {
+            color: rgba(0,0,0,1);
+        }
+
+        .but {
+            background-color: rgba(73,123,208,1);
+            width: 100px;
+            height: 120px;
+            color: #fff;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        .contact-right-img {
+            width: 20px;
+            height: 30px;
+            padding: 0px 5px;
+        }
+
+        .position, .phone {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .phone {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="head-case">
+        <div class="head">
+            <div class="left">
+                <img class="head-logo" src="images/logo_03.png" />
+            </div>
+            <div class="right">
+                <ul class="head-button">
+                    <li class="head-button-item">
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_11.png" />获取帮助</a>
+                    </li>
+                    <li class="head-button-item">
+
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_08.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_06.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">用户登录</a>
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">注册</a>
+                    </li>
+                    <li class="clear">
+
+                    </li>
+                </ul>
+                <ul class="head-menu">
+                    <li class="left head-menu-li">
+                        <img class="img-home" src="images/home_03.png" /> <a target="_self" href="home.html">首页 </a>
+                    </li>
+                    <li class="left head-menu-li">
+                        产品服务
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="paynet.html">网络支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="payment.html">移动支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="paytest.html">支付测试</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        行业解决方案
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="finance.html">互联网金融</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="cloud.html">云账户</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="pipay.html">亿支付</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        <a target="_self" href="Security.html">安全中心</a>
+                    </li>
+                    <li class="left head-menu-li  head-active">
+                        关于我们
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="CompanyProfile.html">公司简介</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="contact.html">联系我们</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 头部END -->
+    <!-- 巨幕 -->
+    <div class="GC">
+        <img class="GC-bg" src="images/GC-bg1.jpg" />
+        <img class="GC-bg" src="images/GC-bg2.jpg" />
+        <img class="GC-bg" src="images/GC-bg3.jpg" />
+    </div>
+    <!-- 巨幕END -->
+    <!-- 主体 -->
+    <div class="min">
+        <div class="min-title alla" data-aniname="fadeIn">
+            <div class="min-title-ch">
+                联系我们
+            </div>
+            <div class="min-title-en">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US
+            </div>
+        </div>
+        <div class="map alla" data-aniname="fadeIn">
+            <img class="map-img" src="images/Pro/map_03.png" />
+        </div>
+        <div class="contact">
+            <div class="contact-left left alla" data-aniname="fadeInLeft">
+                <div class="contact-title">
+                    在线留言
+                </div>
+                <div class="contact-left-input">
+                    <div class="left">
+                        <input class="input" value="姓名" type="text" />
+                        <input class="input" value="手机" type="text" />
+                        <input class="input" value="邮箱" type="text" />
+                    </div>
+                    <div class="left">
+                        <textarea class="text">请输入留言</textarea>
+                    </div>
+                    <div class="left">
+                        <input class="but" value="提交" type="button" />
+                    </div>
+                    <div class="clear">
+
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right right alla" data-aniname="fadeInRight">
+                <div class="contact-title">
+                    联系方式
+                </div>
+                <div class="position">
+                    <img class="contact-right-img left" src="images/Pro/position_03.png" /><div class="contact-right-font left">:深圳市南山区科技园南区R2-B三楼</div>
+                    <div class="clear">
+
+                    </div>
+                </div>
+                <div class="phone">
+                    <img class="contact-right-img left" src="images/Pro/phone_03.png" /><div class="contact-right-font left">:0571-82757223</div>
+                    <div class="clear">
+
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+
+            </div>
+        </div>
+    </div>
+    <!-- 主体END -->
+    <!-- 底部 -->
+    <div class="bottom-case">
+        <div class="bottom">
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">关于我们</li>
+                <li class="bottom-list-li pointer">产品服务</li>
+                <li class="bottom-list-li pointer">新手帮助</li>
+                <li class="bottom-list-li pointer">进度查询</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">公司简介</li>
+                <li class="bottom-list-li pointer">支付介绍</li>
+                <li class="bottom-list-li pointer">互联网金融</li>
+                <li class="bottom-list-li pointer">注册账户</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">联系我们</li>
+                <li class="bottom-list-li pointer">支付测试</li>
+                <li class="bottom-list-li pointer">关于账户</li>
+                <li class="bottom-list-li pointer">开户查询</li>
+            </ul>
+        </div>
+        <div class="copyright-case">
+            <div class="copyright">
+                <div class="left">
+                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备17000528号-1
+                </div>
+                <div class="right">
+                    <img class="follow" src="images/qq_03.png" />
+                    <img class="follow" src="images/wb_03.png" />
+                    <img class="follow" src="images/wx_03.png" />
+                </div>
+                <div class="right">
+                    关注我们：
+                </div>
+                <div class="clear">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部END -->
+    <script src="js/GCAutoRun.js"></script>
+    <script>
+        $(function () {
+            GCAutoRun(".GC-bg", 7000);
+            //输入判定
+            $(".input,.text").focus(function () {
+                $(this).addClass("input-active");
+                $(this).val("")
+            }).blur(function () {
+                $(this).removeClass("input-active");
+            });
+            //
+            $(".head-menu-li").mouseover(function () {
+                $(this).find(".drop-list").stop().slideDown(300);
+                
+            }).mouseout(function () {
+                $(this).find(".drop-list").stop().slideUp(300);
+            })
+            //$(".drop-list-item").mouseout(function () {
+            //    $(this).parent().stop().slideUp(500);
+            //    })
+            $(".drop-list").mouseover(function () {
+                $(this).stop().slideDown(300);
+            }).mouseout(function () {
+                $(this).stop().slideUp(300);
+            })
+        })
+    </script>
+</body>
+</html>

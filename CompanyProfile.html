@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>亿支付</title>
+    <meta content="width=1024, initial-scale=1, maximum-scale=1, user-scalable=yes" name="viewport">
+    <link rel="shortcut icon" href="images/logo_favicon_yi.ico" type="image/x-icon" />
+    <script src="public/jquery-3.1.1.min.js"></script>
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <script src="js/ScrollAnimate.js"></script>
+    <!--[if IE 9]>
+           <style type="text/css">
+        .alla {
+            opacity:1;
+        }
+    </style>
+        <![endif]-->
+
+    <style type="text/css">
+        /*主体*/
+        .min {
+        }
+
+        .min-case {
+            margin: 0px auto;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .min-title {
+            color: rgba(253,125,0,1);
+        }
+
+        .min-title-ch {
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .min-title-en {
+            font-size: 12px;
+            font-weight: 200;
+        }
+
+        .min-list {
+            margin-top: 30px;
+        }
+
+        .min-list-img {
+            width: 50%;
+        }
+
+        .min-list-font {
+            width: 50%;
+        }
+
+        .min-list-title {
+            margin-top: 15%;
+            border-left: 2px solid rgba(253,120,0,1);
+            font-size: 18px;
+            padding-left: 5px;
+            font-weight: 900;
+        }
+
+        .min-list-son {
+            padding-left: 5px;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .min-list-font.right > div {
+            margin-left: 30px;
+        }
+
+        .min-list-font.left > div {
+            margin-right: 30px;
+        }
+
+        .more {
+            margin: 100px auto;
+            width: 100px;
+            text-align: center;
+            border-radius: 30px;
+            line-height: 30px;
+            height: 30px;
+            color: rgba(0,0,0,0.2);
+            border: 1px solid rgba(0,0,0,0.2);
+            cursor: pointer;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+            .more:hover {
+                color: rgba(0,0,0,0.5);
+                border: 1px solid rgba(0,0,0,0.5);
+            }
+        /*主体END*/
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="head-case">
+        <div class="head">
+            <div class="left">
+                <img class="head-logo" src="images/logo_03.png" />
+            </div>
+            <div class="right">
+                <ul class="head-button">
+                    <li class="head-button-item">
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_11.png" />获取帮助</a>
+                    </li>
+                    <li class="head-button-item">
+
+                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_08.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <img class="head-button-img" src="images/head-img_06.png" />
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">用户登录</a>
+                    </li>
+                    <li class="head-button-item">
+                        <a class="head-button-font head-button-button">注册</a>
+                    </li>
+                    <li class="clear">
+
+                    </li>
+                </ul>
+                <ul class="head-menu">
+                    <li class="left head-menu-li">
+                        <img class="img-home" src="images/home_03.png" /> <a target="_self" href="home.html">首页 </a>
+                    </li>
+                    <li class="left head-menu-li">
+                        产品服务
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="paynet.html">网络支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="payment.html">移动支付</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="paytest.html">支付测试</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        行业解决方案
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="finance.html">互联网金融</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="cloud.html">云账户</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="pipay.html">亿支付</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="left head-menu-li">
+                        <a target="_self" href="Security.html">安全中心</a>
+                    </li>
+                    <li class="left head-menu-li  head-active">
+                        关于我们
+                        <ul class="drop-list">
+                            <li class="drop-list-item">
+                                <a target="_self" href="CompanyProfile.html">公司简介</a>
+                            </li>
+                            <li class="drop-list-item">
+                                <a target="_self" href="contact.html">联系我们</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 头部END -->
+    <!-- 巨幕 -->
+    <div class="GC">
+        <img class="GC-bg" src="images/GC-bg1.jpg" />
+        <img class="GC-bg" src="images/GC-bg2.jpg" />
+        <img class="GC-bg" src="images/GC-bg3.jpg" />
+    </div>
+    <!-- 巨幕END -->
+    <!-- 主体 -->
+    <div class="min">
+        <div class="min-case">
+            <div class="min-title alla" data-aniname="fadeIn">
+                <div class="min-title-ch">公司简介</div>
+                <div class="min-title-en">&nbsp;&nbsp;COMPANY PROFILE</div>
+            </div>
+            <div class="min-list">
+                <img class="min-list-img left alla" src="images/Pro/Pro1_03.png" data-aniname="fadeInLeft" />
+                <div class="min-list-font right alla" data-aniname="fadeInRight">
+                    <div class="min-list-title">亿支付信息科技有限公司</div>
+                    <div class="min-list-son">
+                        亿支付信息科技有限公司成立于2011年1月，是一的家以第三方支付为基础的科技金融综合服务平台，亿支付旗下现拥有，针对B2B/B2C的网络支付产品、移动支付产品、金融的的的服务产品等针对企业资金管理服务推出的云账户服务，针对互联网金融行业联合多家银行共同推出银行存管解决方案；针对跨境商贸领域的跨境支付解决方案。
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="min-list">
+                <div class="min-list-font left alla" data-aniname="fadeInLeft">
+                    <div class="min-list-title">亿支付信息科技有限公司</div>
+                    <div class="min-list-son">
+                        亿支付信息科技有限公司成立于2011年1月，是一的家以第三方支付为基础的科技金融综合服务平台，亿支付旗下现拥有，针对B2B/B2C的网络支付产品、移动支付产品、金融的的的服务产品等针对企业资金管理服务推出的云账户服务，针对互联网金融行业联合多家银行共同推出银行存管解决方案；针对跨境商贸领域的跨境支付解决方案。
+                    </div>
+                </div>
+                <img class="min-list-img right alla" data-aniname="fadeInRight" src="images/Pro/Pro2_03.png" />
+                <div class="clear">
+
+                </div>
+            </div>
+        </div>
+        <div class="more alla" data-aniname="fadeIn">
+            MORE
+        </div>
+    </div>
+    <!-- 主体END -->
+    <!-- 底部 -->
+    <div class="bottom-case">
+        <div class="bottom">
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">关于我们</li>
+                <li class="bottom-list-li pointer">产品服务</li>
+                <li class="bottom-list-li pointer">新手帮助</li>
+                <li class="bottom-list-li pointer">进度查询</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">公司简介</li>
+                <li class="bottom-list-li pointer">支付介绍</li>
+                <li class="bottom-list-li pointer">互联网金融</li>
+                <li class="bottom-list-li pointer">注册账户</li>
+            </ul>
+            <ul class="bottom-list">
+                <li class="bottom-list-title pointer">联系我们</li>
+                <li class="bottom-list-li pointer">支付测试</li>
+                <li class="bottom-list-li pointer">关于账户</li>
+                <li class="bottom-list-li pointer">开户查询</li>
+            </ul>
+        </div>
+        <div class="copyright-case">
+            <div class="copyright">
+                <div class="left">
+                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备17000528号-1
+                </div>
+                <div class="right">
+                    <img class="follow" src="images/qq_03.png" />
+                    <img class="follow" src="images/wb_03.png" />
+                    <img class="follow" src="images/wx_03.png" />
+                </div>
+                <div class="right">
+                    关注我们：
+                </div>
+                <div class="clear">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部END -->
+    <script src="js/GCAutoRun.js"></script>
+    <script>
+        $(function () {
+            GCAutoRun(".GC-bg", 7000);
+            $(".head-menu-li").mouseover(function () {
+                $(this).find(".drop-list").stop().slideDown(300);
+                
+            }).mouseout(function () {
+                $(this).find(".drop-list").stop().slideUp(300);
+            })
+            //$(".drop-list-item").mouseout(function () {
+            //    $(this).parent().stop().slideUp(500);
+            //    })
+            $(".drop-list").mouseover(function () {
+                $(this).stop().slideDown(300);
+            }).mouseout(function () {
+                $(this).stop().slideUp(300);
+            })
+        })
+    </script>
+</body>
+</html>
