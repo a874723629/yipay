@@ -167,7 +167,6 @@
                 border: 1px solid rgba(0,0,0,0.5);
             }
     </style>
-
 </head>
 <body>
     <!-- 头部 -->
@@ -182,14 +181,7 @@
                         <a class="head-button-font"><img class="head-button-img" src="images/head-img_11.png" />获取帮助</a>
                     </li>
                     <li class="head-button-item">
-                        
-                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
-                    </li>
-                    <li class="head-button-item">
-                        <img class="head-button-img" src="images/head-img_08.png" />
-                    </li>
-                    <li class="head-button-item">
-                        <img class="head-button-img" src="images/head-img_06.png" />
+                        <a class="head-button-font" href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
                     </li>
                     <li class="head-button-item">
                         <a class="head-button-font head-button-button">用户登录</a>
@@ -203,7 +195,7 @@
                 </ul>
                 <ul class="head-menu">
                     <li class="left head-menu-li head-active">
-                       <img class="img-home" src="images/home_03.png" /> <a target="_self" href="home.html">首页 </a>
+                        <img class="img-home" src="images/home_03.png" /> <a target="_self" href="home.html">首页 </a>
                     </li>
                     <li class="left head-menu-li">
                         产品服务
@@ -285,7 +277,7 @@
                 <div class="money">
                     <img class="min1-min-img" src="images/Pro/money_03.png" />
                     <div class="min1-min-title">
-                         亿支付
+                        亿支付
                     </div>
                     <div class="min1-min-font">
                         方便的支付体验，提高支付成功收款更简单。
@@ -308,7 +300,7 @@
         <div class="min2-bg">
             <div class="min min2">
                 <div class="min-title  alla" data-aniname="fadeIn">
-                    <div class="min-title-ch" >
+                    <div class="min-title-ch">
                         新闻中心
                     </div>
                     <div class="min-title-en">
@@ -363,7 +355,7 @@
                 </div>
             </div>
             <div class="min3-min">
-                <div class="min3-min-left left alla"data-aniname="fadeInLeft">
+                <div class="min3-min-left left alla" data-aniname="fadeInLeft">
                     <div class="min3-min-font">
                         亿支付信息科技有限公司成立于2011年1月，是一家以第三方支付为基础的科技金融综合服务平台国付宝旗下现拥有针对B2B/B2C的网络支付产品移动支付产品、金融服务产品等，针对企业资金管理服务推出的云账户服务，针对互联网金融行业联合多家银行共同推出银行存管解决方案。
                     </div>
@@ -381,6 +373,47 @@
         </div>
     </div>
     <!-- 主体END -->
+    <!-- 固定侧边栏 -->
+    <div class="fx">
+        <div class="phone">
+            <div class="phone-title">
+                <img class="left phone-img" src="images/fx/phone.png" /><div class="phone-font left">服务热线</div>
+                <div class="clear">
+
+                </div>
+            </div>
+            <div class="phone-number">
+                400-0531-473
+            </div>
+            <hr class="line" />
+            <div class="work">
+                周一~周无&nbsp;9：30-19：30<br />
+                周六~周日&nbsp;10：30-14：30
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/service.png" /><div class="fx-list-title left">在线客服</div>
+                <div class="clear"></div>
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/qq.png" />
+                <div class="fx-list-font left">
+                    <a href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes">在线咨询01</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/qq.png" />
+                <div class="fx-list-font left">
+                    <a href="tencent://message/?uin=499252631&amp;Site=有事Q我&amp;Menu=yes">在线咨询02</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="fx-show-button">
+            &lt;
+        </div>
+    </div>
+    <!-- 固定侧边栏END -->
     <!-- 底部 -->
     <div class="bottom-case">
         <div class="bottom">
@@ -408,10 +441,10 @@
         <div class="copyright-case">
             <div class="copyright">
                 <div class="left">
-                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备17000528号-1
+                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鲁ICP备17000528号-1
                 </div>
                 <div class="right">
-                    <img class="follow" src="images/qq_03.png" />
+                    <a class="head-button-font" href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes"><img class="follow" src="images/qq_03.png" /></a>
                     <img class="follow" src="images/wb_03.png" />
                     <img class="follow" src="images/wx_03.png" />
                 </div>
@@ -426,23 +459,10 @@
     </div>
     <!-- 底部END -->
     <script src="js/GCAutoRun.js"></script>
+    <script src="js/public.js"></script>
     <script>
         $(function () {
             GCAutoRun(".GC-bg", 7000);
-            $(".head-menu-li").mouseover(function () {
-                $(this).find(".drop-list").stop().slideDown(300);
-                
-            }).mouseout(function () {
-                $(this).find(".drop-list").stop().slideUp(300);
-                })
-            //$(".drop-list-item").mouseout(function () {
-            //    $(this).parent().stop().slideUp(500);
-            //    })
-            $(".drop-list").mouseover(function () {
-                $(this).stop().slideDown(300);
-            }).mouseout(function () {
-                $(this).stop().slideUp(300);
-                })
         })
     </script>
 </body>

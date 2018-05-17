@@ -113,13 +113,7 @@
                     </li>
                     <li class="head-button-item">
 
-                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
-                    </li>
-                    <li class="head-button-item">
-                        <img class="head-button-img" src="images/head-img_08.png" />
-                    </li>
-                    <li class="head-button-item">
-                        <img class="head-button-img" src="images/head-img_06.png" />
+                        <a class="head-button-font" href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
                     </li>
                     <li class="head-button-item">
                         <a class="head-button-font head-button-button">用户登录</a>
@@ -201,9 +195,12 @@
             <div class="min-list">
                 <img class="min-list-img left alla" src="images/Pro/Pro1_03.png" data-aniname="fadeInLeft" />
                 <div class="min-list-font right alla" data-aniname="fadeInRight">
-                    <div class="min-list-title">亿支付信息科技有限公司</div>
+                    <div class="min-list-title">亿支付</div>
                     <div class="min-list-son">
-                        亿支付信息科技有限公司成立于2011年1月，是一的家以第三方支付为基础的科技金融综合服务平台，亿支付旗下现拥有，针对B2B/B2C的网络支付产品、移动支付产品、金融的的的服务产品等针对企业资金管理服务推出的云账户服务，针对互联网金融行业联合多家银行共同推出银行存管解决方案；针对跨境商贸领域的跨境支付解决方案。
+                        亿支付（YI pay）是中国支付行业的开创者和领导者。
+                        总部位于山东济南。自公司成立以来，基于了多年在互联网支付领域的积累经验，为消费者和企业提供丰富的支付工具、稳健的线上支付、APP支付、等多元化的支付渠道，使客户能够随时随地畅享便利。
+                        智慧的互联网金融服务，亿支付秉承成就客户、极致服务、实事求是、开放分享的核心价值观，以交易服务改变生活为使命。
+                        致力成为世界一流的交易服务平台，领跑电子支付、移动互联和互联网金
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -226,6 +223,47 @@
         </div>
     </div>
     <!-- 主体END -->
+    <!-- 固定侧边栏 -->
+    <div class="fx">
+        <div class="phone">
+            <div class="phone-title">
+                <img class="left phone-img" src="images/fx/phone.png" /><div class="phone-font left">服务热线</div>
+                <div class="clear">
+
+                </div>
+            </div>
+            <div class="phone-number">
+                400-0531-473
+            </div>
+            <hr class="line" />
+            <div class="work">
+                周一~周无&nbsp;9：30-19：30<br />
+                周六~周日&nbsp;10：30-14：30
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/service.png" /><div class="fx-list-title left">在线客服</div>
+                <div class="clear"></div>
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/qq.png" />
+                <div class="fx-list-font left">
+                    <a href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes">在线咨询01</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/qq.png" />
+                <div class="fx-list-font left">
+                    <a href="tencent://message/?uin=499252631&amp;Site=有事Q我&amp;Menu=yes">在线咨询02</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="fx-show-button">
+            &lt;
+        </div>
+    </div>
+    <!-- 固定侧边栏END -->
     <!-- 底部 -->
     <div class="bottom-case">
         <div class="bottom">
@@ -253,10 +291,10 @@
         <div class="copyright-case">
             <div class="copyright">
                 <div class="left">
-                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备17000528号-1
+                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鲁ICP备17000528号-1
                 </div>
                 <div class="right">
-                    <img class="follow" src="images/qq_03.png" />
+                    <a class="head-button-font" href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes"><img class="follow" src="images/qq_03.png" /></a>
                     <img class="follow" src="images/wb_03.png" />
                     <img class="follow" src="images/wx_03.png" />
                 </div>
@@ -271,23 +309,10 @@
     </div>
     <!-- 底部END -->
     <script src="js/GCAutoRun.js"></script>
+    <script src="js/public.js"></script>
     <script>
         $(function () {
             GCAutoRun(".GC-bg", 7000);
-            $(".head-menu-li").mouseover(function () {
-                $(this).find(".drop-list").stop().slideDown(300);
-
-            }).mouseout(function () {
-                $(this).find(".drop-list").stop().slideUp(300);
-            })
-            //$(".drop-list-item").mouseout(function () {
-            //    $(this).parent().stop().slideUp(500);
-            //    })
-            $(".drop-list").mouseover(function () {
-                $(this).stop().slideDown(300);
-            }).mouseout(function () {
-                $(this).stop().slideUp(300);
-            })
         })
     </script>
 </body>

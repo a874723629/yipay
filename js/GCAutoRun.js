@@ -36,6 +36,3 @@
         Grun();
     }, speed);
 }
-$(".help").click(function () {
-    alert("暂时无法提供注册服务，请联系客服");
-})

@@ -102,13 +102,7 @@
                     </li>
                     <li class="head-button-item">
 
-                        <a class="head-button-font"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
-                    </li>
-                    <li class="head-button-item">
-                        <img class="head-button-img" src="images/head-img_08.png" />
-                    </li>
-                    <li class="head-button-item">
-                        <img class="head-button-img" src="images/head-img_06.png" />
+                        <a class="head-button-font" href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes"><img class="head-button-img" src="images/head-img_03.png" />在线客服</a>
                     </li>
                     <li class="head-button-item">
                         <a class="head-button-font head-button-button">用户登录</a>
@@ -180,6 +174,7 @@
         <img class="GC-bg" src="images/GC-bg3.jpg" />
     </div>
     <!-- 巨幕END -->
+    <!-- 主体 -->
     <div class="min-title">
         安全中心
     </div>
@@ -240,6 +235,48 @@
         </div>
 
     </div>
+    <!-- 主体END -->
+    <!-- 固定侧边栏 -->
+    <div class="fx">
+        <div class="phone">
+            <div class="phone-title">
+                <img class="left phone-img" src="images/fx/phone.png" /><div class="phone-font left">服务热线</div>
+                <div class="clear">
+
+                </div>
+            </div>
+            <div class="phone-number">
+                400-0531-473
+            </div>
+            <hr class="line" />
+            <div class="work">
+                周一~周无&nbsp;9：30-19：30<br />
+                周六~周日&nbsp;10：30-14：30
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/service.png" /><div class="fx-list-title left">在线客服</div>
+                <div class="clear"></div>
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/qq.png" />
+                <div class="fx-list-font left">
+                    <a href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes">在线咨询01</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="fx-list">
+                <img class="fx-list-img left" src="images/fx/qq.png" />
+                <div class="fx-list-font left">
+                    <a href="tencent://message/?uin=499252631&amp;Site=有事Q我&amp;Menu=yes">在线咨询02</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="fx-show-button">
+            &lt;
+        </div>
+    </div>
+    <!-- 固定侧边栏END -->
     <!-- 底部 -->
     <div class="bottom-case">
         <div class="bottom">
@@ -267,10 +304,10 @@
         <div class="copyright-case">
             <div class="copyright">
                 <div class="left">
-                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粤ICP备17000528号-1
+                    亿支付信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鲁ICP备17000528号-1
                 </div>
                 <div class="right">
-                    <img class="follow" src="images/qq_03.png" />
+                    <a class="head-button-font" href="tencent://message/?uin=742358458&amp;Site=有事Q我&amp;Menu=yes"><img class="follow" src="images/qq_03.png" /></a>
                     <img class="follow" src="images/wb_03.png" />
                     <img class="follow" src="images/wx_03.png" />
                 </div>
@@ -285,20 +322,10 @@
     </div>
     <!-- 底部END -->
     <script src="js/GCAutoRun.js"></script>
+    <script src="js/public.js"></script>
     <script>
         $(function () {
             GCAutoRun(".GC-bg", 7000);
-            $(".head-menu-li").mouseover(function () {
-                $(this).find(".drop-list").stop().slideDown(300);
-
-            }).mouseout(function () {
-                $(this).find(".drop-list").stop().slideUp(300);
-            })
-            $(".drop-list").mouseover(function () {
-                $(this).stop().slideDown(300);
-            }).mouseout(function () {
-                $(this).stop().slideUp(300);
-            })
         })
     </script>
 </body>

@@ -35,7 +35,7 @@ input, button, select, textarea {
     float: right;
 }
 .head-button {
-margin-left:55px;
+margin-left:100px;
 }
 .head-logo {
     width: 150px;
@@ -128,6 +128,113 @@ margin-left:55px;
     bottom: 0px;
 }
 /*巨幕END*/
+/*固定侧边栏*/
+.fx {
+    position: fixed;
+    bottom: 0px;
+    right: -240px;
+    width: 200px;
+    height: 230px;
+    background-color: rgba(255,255,255,1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,1) 2px 2px 6px;
+    border: 1px solid rgba(0,0,0,0.2);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 4;
+}
+
+.fx-show {
+    right: 0px;
+}
+
+.phone-img {
+    height: 30px;
+    width: 30px;
+    margin-left: 0px;
+}
+
+.phone-font {
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.phone-number {
+    width: 100%;
+    text-align: center;
+    color: rgba(205,0,0,1);
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.line {
+    border-style: dashed;
+    border-color: rgba(0,0,0,0.2);
+    margin-top: 20px;
+}
+
+.work {
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.fx-list {
+    margin-top: 10px;
+}
+
+.fx-list-img {
+    width: 20px;
+    height: 20px;
+}
+
+.fx-list-title {
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.fx-list-font {
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+    .fx-list-font > a {
+        /*color: rgba(0,0,0,0.8);*/
+    }
+
+.fx-show-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    background-color: rgba(205,0,0,0.3);
+    left: -50px;
+    top: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 4;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+    .fx-show-button:hover {
+        background-color: rgba(205,0,0,1);
+    }
+/*固定侧边栏END*/
 /*底部*/
 .bottom-case {
     width: 100%;
